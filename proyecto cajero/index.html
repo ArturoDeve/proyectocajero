@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!DOCTYPE html>
+    <html lang="es">
+<link rel="stylesheet" href="cajero.css">
+
+    <title>Banco Laladrona</title>
+
+</head>
+<body>
+    <div class="cajero">
+        <h2>The Thieves Bank</h2>
+        <h3>cajero automatico</h3>
+        <form id="loginForm">
+            <label for="usuario">Usuario:</label>
+            <input type="text" id="usuario" required>
+
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" required>
+
+            <button type="button" onclick="iniciarSesion()">Iniciar Sesión</button>
+        </form>
+
+        <div id="operaciones" style="display:none;">
+            <label for="montoDepositado">Deposito:</label>
+            <input type="number" id="montoDepositado" max="10000">
+
+            <button type="button" onclick="depositar()">Depositar</button>
+
+            <label for="montoRetiro">Retiro:</label>
+            <input type="number" id="montoRetiro" max="3000">
+
+            <button type="button" onclick="retirar()">Retirar</button>
+
+            <button type="button" onclick="consultarSaldo()">Consultar Saldo</button>
+
+
+
+            <button type="button" onclick="cerrarSesion()">Cerrar Sesión</button>
+        </div>
+
+        <div id="mensajeError" class="error"></div>
+    </div>
+
+    <script src="cajero.js"></script>
+</body>
+</html>
+
+</body>
+</html>
